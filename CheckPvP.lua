@@ -54,7 +54,6 @@ function CustomCheckPvPButtonMixin:OnClick(button)
     elseif button.name then
         name = GetNameFromCommunity(clubID, button.name) or button.name
         realm = GetRealmName()
-        
     end
 
     if name then
@@ -64,7 +63,6 @@ function CustomCheckPvPButtonMixin:OnClick(button)
         else 
             edit:SetText(displayName)
         end
-
     else
         edit:SetText("No valid player targeted")
     end
